@@ -1,0 +1,295 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: cursive;
+}
+
+#header{
+    background-color: #4ba4bb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+#logo img{
+    height: 50px;
+}
+
+/* ---------------------//Dropdown//----------------- */
+
+a{
+    text-decoration: none;
+    color: white;
+
+}
+
+#navbar{
+    float: right;
+    font-weight: bold;
+}
+
+#navbar>ul>li{
+    list-style: none;
+    display: inline-block;
+    padding: 15px;
+}
+
+#dropdown{
+    display: none;
+    position: absolute;
+    background-color: #4ba4bb;
+    width: 150px;
+    top: 58px;
+    right: 266px;
+}
+
+#dropdown>ul>li{
+    list-style: none;
+    padding: 10px;
+}
+
+#navbar>ul>li:hover{
+    background-color:#306d75;
+}
+
+#navbar>ul>li:hover #dropdown{
+    display: block;
+    cursor: pointer;
+}
+
+#dropdown>ul>li:hover{
+    background-color: #306d75;
+    cursor: pointer;
+    color: white;
+}
+
+#border_contactus{
+    border-radius: 8px;
+    background-color: #da5c53;
+    padding: 5px;
+}
+
+#contact{
+    border: 0px;
+    background-color: #da5c53;
+    border-radius: 8px;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    align-items: center;
+    padding-top: 1px;
+}
+
+#banner{
+    background-image: url("../Gambar/interior_resize.png");
+    /* opacity: 80%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+}
+
+#welcome{
+    align-items: center;
+    padding: 70px 70px;
+}
+
+#welcome img{
+    height: 200px;
+    padding-bottom: 10px;
+}
+
+#background-aboutus{
+    background-image: url("../Gambar/information1_resize.png");
+    height:auto;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    padding: 110px;
+}
+
+#information{
+    border: 0px;
+    background-color: white;
+    border-radius: 7px;
+    opacity: 0.7;
+    padding: 30px;
+    width: 1000px;
+    margin: auto;
+}
+
+#information h2{
+    color: black;
+    font-weight: bolder;
+}
+
+#about-us{
+    border: 0px;
+    border-radius: 5px;
+    background-color: #a8e4b1;
+    width: 100px;
+    height: 30px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#about-us a{
+    text-decoration: none;
+    color: black;
+}
+
+#title-recommend{
+    background-color: #306d75 ;
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+}
+
+#recommend{
+    background-color: #306d75 ;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+#recommend img{
+    height: 100px;
+    border-radius: 7px;
+}
+
+#see-more-menu-background{
+    background-color: #306d75;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    padding-bottom: 20px;
+}
+
+#see-more-menu{
+    border: 0px;
+    border-radius: 5px;
+    background-color: #a8e4b1;
+    width:95px;
+    height: 30px;
+    text-align: center;
+    align-items: center;
+    padding-top: 5px;
+}
+
+#see-more-menu a{
+    text-decoration: none;
+    color: black;
+}
+
+#title-location{
+    text-align: center;
+    padding-top: 10px;
+}
+
+#location{
+    /* display: grid; */
+    /* grid-template-columns: repeat(3,1fr); */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+    padding: 30px;
+}
+
+#see-more-location-background{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    padding-bottom: 20px;
+}
+
+#see-more-location{
+    border: 0px;
+    border-radius: 5px;
+    background-color: #a8e4b1;
+    width:95px;
+    height: 30px;
+    text-align: center;
+    align-items: center;
+    padding-top: 5px;
+}
+
+#see-more-location a{
+    text-decoration: none;
+    color: black;
+}
+
+#footer-abu{
+    background-color: #e6e6e9;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+#danbam a{
+    text-decoration: none;
+    color: black;
+}
+
+#img-sosmed{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding-top: 5px;
+}
+
+#img-sosmed img{
+    height: 30px;
+}
+#footer-menu a{
+    text-decoration: none;
+    color: black;
+}
+#footer-biru{
+    background-color: #4ba4bb;
+    padding: 20px;
+    color: white;
+}
+
+@media screen and (max-width:969px) {
+    #recommend{
+        flex-direction: column;
+    }
+
+    #location{
+        flex-direction: column;
+        gap: 7px;
+    }
+
+    #location-1 h4, #location-2 h4 , #location-3 h4{
+        font-size: smaller;
+    }
+
+    #information{
+        width: 100%;
+        font-size: 10pt;
+    }
+
+    #background-aboutus{
+        height: 150px;
+    }
+
+    #recommend h3{
+        font-size: smaller;
+    }
+
+    #recommend p{
+        font-size: smaller;
+    }
+
+    #recommend img{
+        height: 40px;
+    }
+    
+}

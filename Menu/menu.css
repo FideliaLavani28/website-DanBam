@@ -1,0 +1,420 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: cursive;
+}
+
+#header{
+    background-color: #4ba4bb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+#logo img{
+    height: 50px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+
+}
+
+#navbar{
+    float: right;
+    font-weight: bold;
+}
+
+#navbar>ul>li{
+    list-style: none;
+    display: inline-block;
+    padding: 15px;
+}
+
+#dropdown{
+    display: none;
+    position: absolute;
+    background-color: #4ba4bb;
+    width: 150px;
+    top: 58px;
+    right: 266px;
+}
+
+#dropdown>ul>li{
+    list-style: none;
+    padding: 10px;
+}
+
+#navbar>ul>li:hover{
+    background-color:#306d75;
+}
+
+#navbar>ul>li:hover #dropdown{
+    display: block;
+    cursor: pointer;
+}
+
+#dropdown>ul>li:hover{
+    background-color: #306d75;
+    cursor: pointer;
+    color: white;
+}
+
+#border_contactus{
+    border-radius: 8px;
+    background-color: #da5c53;
+    padding: 5px;
+}
+
+#img-awal{
+    background-image: url("../Gambar/ingredients.png");
+    height: 270px;
+    align-items: center;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#img-awal h1{
+    background-color: white;
+    opacity: 50%;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+#imgslider{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    padding-bottom: 5px;
+}
+
+#ul-img{
+    padding: 0;
+    list-style: none;
+}
+.li-img{
+    display: inline;
+    list-style: none;
+}
+#img-slider img{
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+#imgslider>ul>li img{
+    height: 300px;
+}
+
+#prev img{
+    height: 50px;
+}
+
+#next img{
+    height: 50px;
+}
+
+.title{
+    text-align: center;
+    padding: 30px;
+}
+
+.title h1{
+    border: solid 7px #da5c53 ;
+    border-style:double;
+    width: auto;
+    border-radius: 8px;
+}
+
+#food img{
+    height: 200px;
+}
+
+#food{
+    background-color: #4ba4bb;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 30px;
+    gap: 10px;
+    align-items: center;
+}
+
+#soft-tofu-stew{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#spicy-stir-fried-octopus{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#chicken-skewers{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#seolleongtang{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#gimbab{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#tteokbokki{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#bibimbap{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#tokebi{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#food h2{
+    border: solid 3px #306d75;
+    width: 225px;
+    border-radius: 30px;
+    padding-left: 15px;
+}
+
+#drink{
+    background-color: #306d75;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 30px;
+    gap: 10px;
+    align-items: center;
+}
+
+#drink img{
+    height: 200px;
+}
+
+#Soju{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#Korean-Watermelon-Punch{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#Banana-milk{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#Korean-plum-tea{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#Sweet-potato-latte{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#Dalgona-coffee{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#Yuja-tea{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#Daechu-tea{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#drink h2{
+    border: solid 3px #4ba4bb;
+    width: 235px;
+    border-radius: 30px;
+    padding-left: 15px;
+}
+
+#dessert{
+    background-color: #4ba4bb;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 30px;
+    gap: 10px;
+    align-items: center;
+}
+
+#dessert h2{
+    border: solid 3px #306d75;
+    width: 215px;
+    border-radius: 30px;
+    padding-left: 15px;
+
+}
+
+#hotteok{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#dessert img{
+    height: 200px;
+}
+
+#makgeolli-ice-cream{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#bungeoppang{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+ #patbingso{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+ }
+
+#popsicles{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#songpyeon{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+/* -----------------footer----------------- */
+#footer-abu{
+    background-color: #e6e6e9;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+#danbam a{
+    text-decoration: none;
+    color: black;
+}
+
+#img-sosmed{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding-top: 5px;
+}
+
+#img-sosmed img{
+    height: 30px;
+}
+
+#footer-menu a{
+    text-decoration: none;
+    color: black;
+}
+
+#footer-biru{
+    background-color: #4ba4bb;
+    padding: 20px;
+    color: white;
+}
+
+@media screen and (max-width:969px){
+    .title{
+        font-size: smaller;
+    }
+    #food img{
+        height: 70px;
+    }
+
+    #drink img{
+        height: 70px;
+    }
+
+    #dessert img{
+        height: 70px;
+    }
+
+    #food h2{
+        font-size: smaller;
+        width: auto;
+    }
+
+    #food h3{
+        font-size: smaller;
+    }
+
+    #food p{
+        font-size: smaller;
+    }
+
+    #drink h2{
+        font-size: smaller;
+        width: auto;
+    }
+
+    #drink h3{
+        font-size: smaller;
+    }
+
+    #drink p{
+        font-size: smaller;
+    }
+
+    #dessert h2{
+        font-size: smaller;
+        width: auto;
+    }
+
+    #dessert h3{
+        font-size: smaller;
+    }
+
+    #dessert p{
+        font-size: smaller;
+    }
+
+}

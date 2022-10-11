@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <div id="header">
+        <div id="logo">
+            <a href="../Homepage/home.html">
+                <img src="../Gambar/logo_resize-removebg-preview.png" alt="">
+            </a>
+        </div>
+
+        <div id="navbar">
+            <ul>
+                <li><a href="../Homepage/home.html">Home</a></li>
+                <li><a href="../Menu/menu.html">Menu</a>
+                    <div id="dropdown">
+                        <ul>
+                            <li>Food</li>
+                            <li>Drink</li>
+                            <li>Dessert</li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="../About Us/AboutUs.html">About Us</a></li>
+                <li><a href="../Location/Location.html">Location</a></li>
+                <li><a href="contact.html" id="border_contactus">Contact Us</a></li>
+            </ul>
+
+        </div>
+
+    </div>
+ <div id="box">
+    <div id="content">
+        <h1>Contact Us Now!</h1>
+        <div id="form">
+            <table>
+                <form action="">
+                    <tr>
+                        <td>Name</td>
+                        <td>:</td>
+                        <td><input type="text" id="name" placeholder="ex: John"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>Email</td>
+                        <td>:</td>
+                        <td><input type="email" id="email" placeholder="ex: john@gmail.com"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Gender</td>
+                        <td>:</td>
+                        <td>
+                            <input type="radio" id="male" name="gender"> Male
+                            <input type="radio" id="female" name="gender"> Female
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>DanBam's branch location</td>
+                        <td>:</td>
+                        <td>
+                            <select name="" id="register_country">
+                                <option value="">Choose Location</option>
+                                <option value="loc_1">Gangnam-gu</option>
+                                <option value="loc_2">Mapo-gu</option>
+                                <option value="loc_3">Jung-gu</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Message</td>
+                        <td>:</td>
+                        <td><textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message"></textarea></td>
+                        
+                    </tr>
+                    
+                    <div>
+                        <tr>
+                            <td><input type="button" value="Send" id="send" onclick="validate()"></td>
+                        </tr>
+                    </div>
+                    
+                    <tr>
+                        <td>
+                            <span id="errorMsg"></span>
+                        </td>
+                    </tr>
+
+                </form>
+            </table>
+        </div>
+    </div>
+</div>
+    <div id="footer-abu">
+        <div id="danbam">
+            <h2>DanBam</h2>
+            <a href="../Homepage/home.html">
+                <p>Home</p>
+            </a>
+            <a href="../About Us/AboutUs.html">
+                <p>About Us</p>
+            </a>
+            <a href="../Location/Location.html">
+                <p>Location</p>
+            </a>
+            <a href="contact.html">
+                <p>Contact Us</p>
+            </a>
+        </div>
+
+        <div id="footer-menu">
+            <h2>Menu</h2>
+            <a href="../Menu/menu.html"><p>Food</p></a>
+            <a href="../Menu/menu.html"><p>Drink</p></a>
+            <a href="../Menu/menu.html"><p>Dessert</p></a>
+        </div>
+        
+        <div id="footer-sosmed">
+            <div id="title-sosmed">
+                <h2>Social Media</h2>
+            </div>
+
+            <div id="img-sosmed">
+                <a href="https://youtube.com">
+                    <img src="..//Gambar/youtube.png" alt="">
+                </a>
+                <a href="https://facebook.com">
+                    <img src="..//Gambar/facebook3.png" alt="">
+                </a>
+                <a href="https://instagram.com">
+                    <img src="..//Gambar/instagram.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer-biru">
+        <p>&copy; Copyright DanBam 2021</p>
+    </div>
+
+    <script src="contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: cursive;
+}
+
+#header{
+    background-color: #4ba4bb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+#logo img{
+    height: 50px;
+}
+
+/* ---------------------//Dropdown//----------------- */
+
+a{
+    text-decoration: none;
+    color: white;
+
+}
+
+#navbar{
+    float: right;
+    font-weight: bold;
+}
+
+#navbar>ul>li{
+    list-style: none;
+    display: inline-block;
+    padding: 15px;
+}
+
+#dropdown{
+    display: none;
+    position: absolute;
+    background-color: #4ba4bb;
+    width: 150px;
+    top: 58px;
+    right: 266px;
+}
+
+#dropdown>ul>li{
+    list-style: none;
+    padding: 10px;
+}
+
+#navbar>ul>li:hover{
+    background-color:#306d75;
+}
+
+#navbar>ul>li:hover #dropdown{
+    display: block;
+    cursor: pointer;
+}
+
+#dropdown>ul>li:hover{
+    background-color: #306d75;
+    cursor: pointer;
+    color: white;
+}
+
+#border_contactus{
+    border-radius: 8px;
+    background-color: #da5c53;
+    padding: 5px;
+}
+
+#box{
+    margin: 15px;
+}
+
+#content{
+    padding: 10px;
+    background-color: #306d75;
+    width: 50%;
+    align-items: center;
+    margin: auto;
+    color: white;
+    border-radius: 10px;
+}
+
+#content h1{
+    text-align: center;
+}
+
+#form{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+#form table{
+    padding: 10px;
+}
+
+#send{
+    background-color: #da5c53;
+    color: white;
+    padding: 8px;
+    margin: auto;
+}
+
+#errorMsg{
+    color: tomato;
+}
+
+/* ---------------------footer---------------- */
+#footer-abu{
+    background-color: #e6e6e9;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+#danbam a{
+    text-decoration: none;
+    color: black;
+}
+
+#img-sosmed{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding-top: 5px;
+}
+
+#img-sosmed img{
+    height: 30px;
+}
+
+#footer-menu a{
+    text-decoration: none;
+    color: black;
+}
+
+#footer-biru{
+    background-color: #4ba4bb;
+    padding: 20px;
+    color: white;
+}
